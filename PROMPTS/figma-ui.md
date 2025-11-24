@@ -9,6 +9,7 @@ Here’s a short prompt you can use:
 - No data fetching. Accept data via typed props. Use shared/ui and widgets only.
 - Use Tailwind classes (no inline styles unless necessary). Match Figma spacing/typography.
 - Keep components presentational, memoized, and formatted (Prettier, 80 cols).
+- if there any react native reusable components that can be used add them
 
 Starter snippet:
 ```tsx
