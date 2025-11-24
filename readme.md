@@ -79,8 +79,10 @@ Feature-Sliced Design (FSD) keeps code modular and scalable.
 
 ```
 src/
-  app/                # App root wiring, providers, navigation (Expo Router)
-  pages/              # Page-level screens (optional if you prefer only routes/)
+  app/                       Expo Router routes
+    _layout.tsx              App providers (Query, Theme, etc.)
+    (tabs)/index.tsx         Example route groups
+    ...                      Screens and nested routes
   widgets/            # Reusable composite UI blocks
   features/           # Business features (e.g., valuation)
     <feature>/
@@ -105,6 +107,8 @@ Notes:
 
 - With Expo Router, route files live in the `app/` folder at the project root or under `src/app` depending on your setup. Keep consistent with your `tsconfig` and Metro config.
 - Reusable RN components go in `src/shared/ui`. Feature-specific UI stays in `src/features/<feature>/ui`.
+
+[See full architecture guide.](ARCHITECTURE.MD)
 
 ## Aliases
 
